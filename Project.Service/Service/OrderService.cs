@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using Chilkat;
 using FFPT_Project.Data.Entity;
 using FFPT_Project.Data.UnitOfWork;
 using FFPT_Project.Service.DTO.Request;
@@ -9,22 +7,11 @@ using FFPT_Project.Service.Exceptions;
 using FFPT_Project.Service.Helpers;
 using IronBarCode;
 using Microsoft.EntityFrameworkCore;
-using Reso.Sdk.Core.Custom;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Drawing.Imaging;
 using System.Net;
 using System.Net.Mail;
-using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
-using ZXing.QrCode.Internal;
 using static FFPT_Project.Service.Helpers.Enum;
-using static System.Net.Mime.MediaTypeNames;
-using Microsoft.Office.Interop.Excel;
-using System.IO;
-using Application = Microsoft.Office.Interop.Excel.Application;
-using Microsoft.OpenApi.Writers;
+//using Application = Microsoft.Office.Interop.Excel.Application;
 
 namespace FFPT_Project.Service.Service
 {
